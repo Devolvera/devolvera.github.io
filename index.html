@@ -9,18 +9,25 @@
   <![endif]-->
 
   <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	  <script src="js/script.js"></script>
+
   </head>
 
   <body ng-controller="mainCtrl">
-    <div id="dark-purple">
-      <h1>{{ message }}</h1>
+    <div id="heightstuff">
+    </div>
+    <div ng-repeat="item in data">
+      <div id="{{ item.id }}" ng-init="init(item.value)">
+        <h1>{{ item.value }}</h1>
+        <p>{{ item.hex }}</p>
+      </div>
     </div>
 
-    <div id="dark-purple">
-      <h1>This is dark purple.</h1>
-    </div>
 
+  <script src="js/heightstuff.js"></script>
   </body>
 </html>
