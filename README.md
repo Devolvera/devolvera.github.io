@@ -1,3 +1,3 @@
-## Shit
+# Welcome
 
-This is some basic shit for my app concept.
+To my page.
