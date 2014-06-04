@@ -1,0 +1,44 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+#slide-1 {
+  background: #ec8585; }
+
+#slide-1-content {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 3em;
+  color: #fff; }
+  #slide-1-content:before, #slide-1-content:after {
+    content: '';
+    display: table; }
+  #slide-1-content:after {
+    clear: both; }
+
+#slide-2 {
+  background: #f7ce6e;
+  height: 500px;
+  position: relative; }
+
+.box-test {
+  height: 100px;
+  width: 100px;
+  background: #000;
+  margin: 40px auto; }

@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Devolvera on Github by Devolvera</title>
 
-    
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+
+    <!-- load angularJS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <!-- load jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -14,8 +22,23 @@
     <![endif]-->
   </head>
   <body>
+    <div id="slide-1">
+      <div id="slide-1-content">
+        <span data-scroll-reveal="enter left and move 50px over 1.33s">god what am i doing?</span>
+      </div>
+
+    </div>
+    <div id="slide-2">
+        <div class="box-test" data-scroll-reveal="enter top"></div>
+    </div>
+
+
 
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-
+  <script src="javascripts/heightstuff.js"></script>
+  <script src='javascripts/scrollReveal.js'></script>
+  <script>
+      window.scrollReveal = new scrollReveal();
+  </script>
   </body>
 </html>
