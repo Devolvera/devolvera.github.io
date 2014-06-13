@@ -11,26 +11,29 @@
   align($direction: both)
   cf()
 */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 10px; } }
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16px; } }
+
 #slide-1 {
   background: #ec8585; }
 
 #slide-1-content {
-  *zoom: 1;
-  width: auto;
-  max-width: 960px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  font-size: 3em;
-  color: #fff; }
-  #slide-1-content:before, #slide-1-content:after {
-    content: '';
-    display: table; }
-  #slide-1-content:after {
-    clear: both; }
+  width: 100%;
+  color: #fff;
+  text-align: center; }
+  #slide-1-content #span-1 {
+    font-size: 3em;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700; }
+  #slide-1-content #span-2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.5em; }
 
 #slide-2 {
   background: #f7ce6e;
